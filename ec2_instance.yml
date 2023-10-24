@@ -1,0 +1,10 @@
+---
+ - hosts: localhost
+   connection: local
+   tasks:
+     - name: playbook to create ec2 instance on aws
+       ec2:
+         instance_type: t2.micro
+         image: ami-0c011a140cd549346
+         region: ap-south-1
+         key_name: key92923
